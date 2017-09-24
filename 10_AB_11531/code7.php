@@ -6,11 +6,13 @@ class smartphone {
 } 
 class smartphone_dualsim extends smartphone{ 
    private static function beli_smartphone_dualsim(){ 
-     return "Beli smartphone dual sim baru"; 
+     return "Beli smartphone dualsim baru"; 
    } 
    
    public static function beli_semua(){ 
-     //lengkapi baris kode berikut ini 
+    echo smartphone::beli_smartphone();
+	echo "<br />";
+	echo smartphone_dualsim::beli_smartphone_dualsim(); 
    } 
 } 
    

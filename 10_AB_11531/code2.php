@@ -1,6 +1,8 @@
 <?php 
 class smartphone { 
-   public $merk = "Samsung"; 
+   public function lihat_merk(){
+	 return  "Samsung";   
+   } 
    public function lihat_spec() { 
      return "Spec smartphone: Samsung, 
      Processor Snapdragon, Ram 1GB"; 
@@ -16,7 +18,7 @@ class smartphone_dualsim extends smartphone {
     return parent::lihat_spec(); 
    } 
    public function lihat_merk_smartphone() { 
-    return parent::$merk; 
+    return parent::lihat_merk; 
    } 
 } 
 $gadget_baru = new smartphone_dualsim(); 
